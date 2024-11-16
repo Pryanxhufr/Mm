@@ -262,8 +262,6 @@ Use `/scan {{wallet_name}} winrate {{minimum_winrate}} pnl {{minimum_pnl}}` to g
 - photon  
 - bullx  
 
-Need support? Reach out to @binall.  
-
 🛡️ **Your privacy and security are our top priorities.**  
 
 Thank you for choosing our Bot, {username}!
