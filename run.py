@@ -153,7 +153,7 @@ def print_all_senders(wallet_name, minimum_winrate, minimum_pnl, user_id):
         signatures = get_signatures(wallet_address)
         approved_wallets = []
 
-        with ThreadPoolExecutor(max_workers=30) as executor:
+        with ThreadPoolExecutor(max_workers=10) as executor:
             sender_futures = [executor.submit(get_sender_for_signature, signature) for signature in signatures]
             sources = [future.result() for future in as_completed(sender_futures) if future.result()]
 
